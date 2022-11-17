@@ -44,5 +44,5 @@ view model =
         [ button [ onClick Decrement ] [ text "-" ]
         , button [ onClick Increment ] [ text "+" ]
         , button [ onClick Reset ] [ text "Reset" ]
-        , div [] [ text (String.fromFloat <| Basics.toFloat model / 0) ]
+        , div [] [ text (String.fromInt model) ]
         ]
